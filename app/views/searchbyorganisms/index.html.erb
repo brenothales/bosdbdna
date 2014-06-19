@@ -1,0 +1,9 @@
+<%= form_tag('/searchbyorganisms/go', :remote => true) do %>
+
+    Enter organism name or part of name: <%=text_field_tag('organism')%>
+    <%=submit_tag 'Go'%>
+<% end %>
+
+<div id='result'>
+</div>
+

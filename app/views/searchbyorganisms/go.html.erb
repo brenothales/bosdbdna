@@ -1,0 +1,13 @@
+<h1> Results </h1>
+
+<ul>
+<%@root.family.each do |f|%>
+    <%if f.parent == @root%>
+        <li><%=link_to "#{f.value}", "/details/#{f.value}/show", :remote => true%></li>
+    <%end%>
+<%end%>
+</ul>
+
+
+<div id="details">
+</div>

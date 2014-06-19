@@ -1,0 +1,25 @@
+<form action="home/getBySourceDB" method="post">
+
+<table border="1">
+<%@rows.each do |row|%>
+	<tr>
+		<td>
+			<%=row["group_id"]%>
+		</td>
+		<td>
+			<%=row["group_description"]%>
+		</td>
+		<td>
+			<%=row["protein_id"]%>
+		</td>
+		<td>
+			<%=row["protein_description"]%>
+		</td>
+	</tr>
+<%end%>
+</table>
+
+	<input type="text" id="sourcedb" name="sourcedb" />
+	<input type="submit" />
+
+</form>

@@ -1,0 +1,9 @@
+<%= form_tag('/searchbydescriptions/go', :remote => true) do %>
+
+    Enter protein name or part of name: <%=text_field_tag('protein_descriptions')%>
+    <%=submit_tag 'Go'%>
+<% end %>
+
+<div id='result'>
+</div>
+

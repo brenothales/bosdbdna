@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_id: MyString
+  protein_id: MyString
+  organism_name: MyString
+  protein_description: MyString
+  sequence: MyText
+  group_description: MyString
+  source_db: MyString
+
+two:
+  group_id: MyString
+  protein_id: MyString
+  organism_name: MyString
+  protein_description: MyString
+  sequence: MyText
+  group_description: MyString
+  source_db: MyString

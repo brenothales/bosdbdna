@@ -1,0 +1,17 @@
+<h1>Orthologs</h1>
+
+Version app: <%=@version%>
+
+<table>
+  <tr>
+    <th>Group Id</th>
+    <th>Protein Id</th>
+  </tr>
+ 
+  <% @orthologs.each do |ortho| %>
+    <tr>
+      <td><%= ortho.group_id %></td>
+      <td><%= ortho.protein_id %></td>
+    </tr>
+  <% end %>
+</table>
