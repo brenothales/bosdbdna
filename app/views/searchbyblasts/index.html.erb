@@ -1,0 +1,13 @@
+<h3>Search by Blast</h3>
+
+
+<%= form_tag('/searchbyblasts/go', class:"form-search", :remote => true) do %>
+<div class="input-append">
+ <%= text_field_tag'protein_descriptions',  nil, placeholder:'Enter blast sequence',class:"span6 search-query"  %>
+    <%=submit_tag 'Search', class:"btn" %>
+</div>
+<% end %>
+
+<div id='result'>
+</div>
+

@@ -1,7 +1,11 @@
-<%= form_tag('/searchbydescriptions/go', :remote => true) do %>
+<h3>Search by protein</h3>
 
-    Enter protein name or part of name: <%=text_field_tag('protein_descriptions')%>
-    <%=submit_tag 'Go'%>
+
+<%= form_tag('/searchbydescriptions/go', class:"form-search", :remote => true) do %>
+<div class="input-append">
+ <%= text_field_tag'protein_descriptions',  nil, placeholder:'Enter protein name or part of name',class:"span6 search-query"  %>
+    <%=submit_tag 'Search', class:"btn" %>
+</div>
 <% end %>
 
 <div id='result'>

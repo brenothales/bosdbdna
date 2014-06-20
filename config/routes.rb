@@ -2,10 +2,20 @@ NoActiveRecord::Application.routes.draw do
   
   get 'searchbydescriptions/' => 'searchbydescriptions#index'
   post 'searchbydescriptions/go' => 'searchbydescriptions#go'
+
+  get 'searchbydatabasesources/' => 'searchbydatabasesources#index'
+  post 'searchbydatabasesources/go' => 'searchbydatabasesources#go'
+
+
+  get 'searchbyblasts/' => 'searchbyblasts#index'
+  post 'searchbyblasts/go' => 'searchbyblasts#go'
+
+
   
   get 'searchbyorganisms/' => 'searchbyorganisms#index'
   post 'searchbyorganisms/go' => 'searchbyorganisms#go'
 
+  
   get 'details/:id/show' => 'details#show'
   
 

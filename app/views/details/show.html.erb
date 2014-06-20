@@ -1,8 +1,10 @@
-<h1>Details</h1>
-
-<ul class="DETAILS">
+<div class="container row">
+<h4>Details</h4>
+<ul class="DETAILS ">
 
 <%@root.each do |r|%>
-    <li class="<%=r['source_db']%>" title="<%=r['source_db']%>" alt="<%=r['source_db']%>"><%=r['protein_id']%> (<%=r['organism_name']%>)</li>
+    <li class="<%=r['source_db']%> " title="<%=r['source_db']%>" alt="<%=r['source_db']%>"><%=r['protein_id']%> (<%=r['organism_name']%>)</li>
 <%end%>
 </ul>
+<hr>
+</div>	

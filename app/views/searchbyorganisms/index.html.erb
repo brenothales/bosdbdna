@@ -1,7 +1,11 @@
-<%= form_tag('/searchbyorganisms/go', :remote => true) do %>
+<h3>Search by organism</h3>
 
-    Enter organism name or part of name: <%=text_field_tag('organism')%>
-    <%=submit_tag 'Go'%>
+
+<%= form_tag('/searchbyorganisms/go', class:"form-search", :remote => true) do %>
+<div class="input-append">
+ <%= text_field_tag'organism',  nil, placeholder:'Enter organism name or part of name',class:"span6 search-query"  %>
+    <%=submit_tag 'Search', class:"btn" %>
+</div>
 <% end %>
 
 <div id='result'>

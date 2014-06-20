@@ -1,0 +1,3 @@
+$('#result').hide();
+$('#result').html('<%= escape_javascript( render :file => "searchbydatabasesources/go.html.erb") %>');
+$('#result').show(600);
